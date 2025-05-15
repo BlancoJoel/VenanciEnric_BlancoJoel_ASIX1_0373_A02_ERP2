@@ -1,46 +1,55 @@
-body{
-    background-color: #f79824;
+/* General body styles */
+body {
+    background-color: #f4f4f9; /* Fondo claro y neutro */
     font-family: Arial, sans-serif;
     margin: 20px;
+    color: #333; /* Texto oscuro para buena legibilidad */
 }
-.container{
+
+/* Container styles */
+.container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.box{
+
+/* Box styles */
+.box {
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid #ccc; /* Borde gris claro */
     padding: 20px;
     align-items: center;
-    background-color: #FDCA40;
+    background-color: #e8f0fe; /* Fondo azul claro */
 }
+
 .box:nth-child(even) {
     flex-direction: row-reverse;
 }
+
 .box img {
     max-width: 200px;
     height: auto;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid #ccc; /* Borde gris claro */
 }
 
+/* Text styles */
 .text {
     max-width: 60%;
     font-size: 18px;
 }
 
-
+/* Styles for pagina1.html */
 .body_pagina1 {
-background-color: violet;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-margin: 0;
-padding: 0;
+    background-color: #f0e6ff; /* Fondo violeta claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -62,6 +71,33 @@ article {
 
 p {
     margin: 12px 0;
+    color: #444; /* Texto ligeramente más oscuro */
 }
 
+/* Link styles */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF; /* Azul para los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+a:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Styles for conclusion.html */
+h1 {
+    color: #2c3e50; /* Azul oscuro para los encabezados */
+}
+
+p {
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    color: #555; /* Texto gris oscuro */
+}
